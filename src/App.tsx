@@ -1,9 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
 
-function App() {
-  return (
-    <h1>RentX</h1>
-  )
-}
+const App: React.FC = () => (
+  <>
+    <Router>
+      <Routes />
+    </Router>
+  </>
+);
 
 export default App;
