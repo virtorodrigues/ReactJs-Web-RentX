@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  //align-items: stretch;
 
   align-items: center;
   justify-content: center;
@@ -15,7 +14,7 @@ export const Content = styled.div`
   flex-direction: column;
   text-align: left;
 
-  strong {
+  h1 {
     font-size: 40px;
     margin-bottom: 24px;
   }
@@ -29,17 +28,16 @@ export const Content = styled.div`
   form {
     display: flex;
     flex-direction: column;
+    width: 340px;
 
-    section {
-      margin: 34px 0;
+    strong {
+      font-size: 20px;
+      margin-bottom: 24px;
       display: flex;
-      justify-content: space-between;
+    }
 
-      p {
-        color: #737380;
-        font-size: 13px;
-        cursor: pointer;
-      }
+    > div {
+      margin-bottom: 34px;
     }
   }
 `;

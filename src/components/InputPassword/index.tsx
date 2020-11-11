@@ -1,13 +1,13 @@
 import React, { InputHTMLAttributes } from 'react';
 import { IconBaseProps } from 'react-icons/lib';
-import { FiEye, FiEyeOff } from 'react-icons/fi';
+import { FiEye, FiEyeOff, FiLock } from 'react-icons/fi';
 import { Container } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   icon?: React.ComponentType<IconBaseProps>;
 }
 
-const InputPassword: React.FC<InputProps> = ({ icon: Icon, ...rest }) => {
+const InputPassword: React.FC<InputProps> = ({ ...rest }) => {
   const [isClickedToSeePassword, setIsClickedToSeePassword] = React.useState(
     false,
   );
@@ -15,7 +15,9 @@ const InputPassword: React.FC<InputProps> = ({ icon: Icon, ...rest }) => {
 
   return (
     <Container>
-      <div>{Icon && <Icon size={20} color="#7A7A80" />}</div>
+      <div>
+        <FiLock size={20} color="#7A7A80" />
+      </div>
       <input type={typeInput} {...rest} />
       <button
         tabIndex={-1}

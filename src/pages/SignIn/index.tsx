@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
-import { FiLock, FiMail } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
+import Button from '../../components/Button';
 import Checkbox from '../../components/Checkbox';
 import Input from '../../components/Input';
 import InputPassword from '../../components/InputPassword';
@@ -20,15 +21,13 @@ const SignIn: React.FC = () => {
 
         <form>
           <Input icon={FiMail} placeholder="E-mail" />
-          <InputPassword icon={FiLock} placeholder="Senha" />
+          <InputPassword placeholder="Senha" />
 
           <section>
-            <Checkbox toggleChecked={toggleChecked} checked={checked}>
-              Lembrar-me
-            </Checkbox>
+            <Checkbox toggleChecked={toggleChecked}>Lembrar-me</Checkbox>
             <p>Esqueci minha senha</p>
           </section>
-          <button type="submit">Login</button>
+          <Button type="button">Login</Button>
         </form>
       </Content>
     </Container>

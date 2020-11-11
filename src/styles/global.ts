@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -27,3 +27,5 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 `;
+
+export const Wrapper = styled.div``;
