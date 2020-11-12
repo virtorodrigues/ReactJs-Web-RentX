@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import { FiUser, FiMail, FiFileMinus } from 'react-icons/fi';
+import { Form } from '@unform/web';
+import { FormHandles } from '@unform/core';
 import Button from '../Button';
+import { Container } from './styles';
 import Input from '../Input';
 
-const SignUpData: React.FC = () => (
-  <>
-    <div>
-      <strong>01. Dados</strong>
-      <Input icon={FiUser} placeholder="Nome" />
-      <Input icon={FiMail} placeholder="E-mail" />
-      <Input icon={FiFileMinus} placeholder="CPF" />
-    </div>
-    <Button type="submit">Próximo</Button>
-  </>
-);
+interface SignUpDataProps {
+  handleSubmit: (data: object) => Promise<void>;
+  formRef: RefObject<FormHandles>;
+}
+
+const SignUpData: React.FC<SignUpDataProps> = ({ formRef, handleSubmit }) => {
+  return (
+    <>
+      <Form ref={formRef} onSubmit={handleSubmit}>
+        <Container>
+          <strong>01. Dados</strong>
+          <div>
+            <Input name="name" icon={FiUser} placeholder="Nome" />
+            <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Input name="cpf" icon={FiFileMinus} placeholder="CPF" />
+          </div>
+        </Container>
+        <Button type="submit">Próximo</Button>
+      </Form>
+    </>
+  );
+};
 
 export default SignUpData;

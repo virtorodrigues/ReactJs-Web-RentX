@@ -4,7 +4,6 @@ import {
   FiInstagram,
   FiFacebook,
   FiTwitter,
-  FiWatch,
 } from 'react-icons/fi';
 import { Container, Content, OptionsHeader, Logo } from './styles';
 
@@ -14,7 +13,7 @@ const Header: React.FC = () => (
   <Container>
     <Content>
       <Logo>
-        <a href="">
+        <a href="/">
           <img src={logoRentX} alt="" />
         </a>
         <button type="button">

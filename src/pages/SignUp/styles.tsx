@@ -13,6 +13,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 340px;
 
   h1 {
     font-size: 40px;
@@ -23,21 +24,5 @@ export const Content = styled.div`
     color: #7a7a80;
     font-size: 15px;
     margin-bottom: 80px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-
-    strong {
-      font-size: 20px;
-      margin-bottom: 24px;
-      display: flex;
-    }
-
-    > div {
-      margin-bottom: 34px;
-    }
   }
 `;
