@@ -3,7 +3,7 @@ import { Form } from '@unform/web';
 import React, { useCallback, useRef } from 'react';
 import { FiMail } from 'react-icons/fi';
 import * as Yup from 'yup';
-import Button from '../../components/Button';
+import ButtonPrimary from '../../components/ButtonPrimary';
 import Checkbox from '../../components/Checkbox';
 import Input from '../../components/Input';
 import InputPassword from '../../components/InputPassword';
@@ -53,7 +53,7 @@ const SignIn: React.FC = () => {
             <Checkbox toggleChecked={toggleChecked}>Lembrar-me</Checkbox>
             <p>Esqueci minha senha</p>
           </section>
-          <Button type="submit">Login</Button>
+          <ButtonPrimary type="submit">Login</ButtonPrimary>
         </Form>
       </Content>
     </Container>

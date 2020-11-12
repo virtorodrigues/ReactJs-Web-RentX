@@ -2,7 +2,7 @@ import React, { RefObject } from 'react';
 import { FiUser, FiMail, FiFileMinus } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
-import Button from '../Button';
+import ButtonPrimary from '../ButtonPrimary';
 import { Container } from './styles';
 import Input from '../Input';
 
@@ -23,7 +23,7 @@ const SignUpData: React.FC<SignUpDataProps> = ({ formRef, handleSubmit }) => {
             <Input name="cpf" icon={FiFileMinus} placeholder="CPF" />
           </div>
         </Container>
-        <Button type="submit">Próximo</Button>
+        <ButtonPrimary type="submit">Próximo</ButtonPrimary>
       </Form>
     </>
   );

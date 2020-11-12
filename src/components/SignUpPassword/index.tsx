@@ -1,7 +1,7 @@
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import React, { RefObject } from 'react';
-import Button from '../Button';
+import ButtonPrimary from '../ButtonPrimary';
 import InputPassword from '../InputPassword';
 import { Container } from './styles';
 
@@ -23,7 +23,7 @@ const SignUpPassword: React.FC<SignUpPasswordProps> = ({
           <InputPassword name="repeatPassword" placeholder="Repita a senha" />
         </div>
       </Container>
-      <Button type="submit">Cadastrar</Button>
+      <ButtonPrimary type="submit">Cadastrar</ButtonPrimary>
     </Form>
   );
 };

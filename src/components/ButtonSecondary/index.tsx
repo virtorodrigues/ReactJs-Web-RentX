@@ -4,8 +4,8 @@ import { Container } from './styles';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button: React.FC<ButtonProps> = ({ children, ...props }) => (
+const ButtonSecondary: React.FC<ButtonProps> = ({ children, ...props }) => (
   <Container {...props}>{children}</Container>
 );
 
-export default Button;
+export default ButtonSecondary;
