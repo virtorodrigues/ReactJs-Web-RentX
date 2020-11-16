@@ -3,7 +3,7 @@ import { FiCamera } from 'react-icons/fi';
 
 import { Container, Details, TitleCar, InformationsToLocate } from './styles';
 
-import lancer from '../../assets/Lancer.svg';
+import lancer from '../../assets/lancer.svg';
 
 const CardCar: React.FC = () => (
   <Container>

@@ -23,6 +23,10 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 600;
   }
 
+  p, span {
+    font-weight: 500;
+  }
+
   button {
     cursor: pointer;
   }
