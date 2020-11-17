@@ -1,7 +1,6 @@
 import React from 'react';
 import { FiCamera } from 'react-icons/fi';
 
-import { Carousel } from 'react-responsive-carousel';
 import {
   Container,
   TitleDetails,
@@ -10,9 +9,9 @@ import {
   AllDetailsCar,
   SchedulingDate,
   TotalToPay,
-  Body,
+  Carousel,
+  Details,
 } from './styles';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 import lancer from '../../assets/lancer.svg';
 import forca from '../../assets/forca.svg';
@@ -27,18 +26,10 @@ import ButtonPrimary from '../ButtonPrimary';
 
 const CardCarOpened: React.FC = () => (
   <Container>
-    <Body>
-      <Carousel>
-        <div>
-          <img src={lambo} alt="" />
-        </div>
-        <div>
-          <img src={lambo} alt="" />
-        </div>
-        <div>
-          <img src={lambo} alt="" />
-        </div>
-      </Carousel>
+    <Carousel>
+      <img src={lambo} alt="" />
+    </Carousel>
+    <Details>
       <TitleDetails>
         <TitleName>
           <span>LAMBORGHINI</span>
@@ -92,18 +83,18 @@ const CardCarOpened: React.FC = () => (
           <p>18 Julho 2020 </p>
         </div>
       </SchedulingDate>
-    </Body>
 
-    <TotalToPay>
-      <div>
+      <TotalToPay>
         <div>
-          <span>TOTAL</span>
-          <p>R$ 580 x3 diárias</p>
+          <div>
+            <span>TOTAL</span>
+            <p>R$ 580 x3 diárias</p>
+          </div>
+          <strong>R$ 2,900</strong>
         </div>
-        <strong>R$ 2,900</strong>
-      </div>
-      <ButtonPrimary type="submit">Alugar agora</ButtonPrimary>
-    </TotalToPay>
+        <ButtonPrimary type="submit">Alugar agora</ButtonPrimary>
+      </TotalToPay>
+    </Details>
   </Container>
 );
 

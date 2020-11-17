@@ -1,14 +1,25 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
-export const Container = styled.div`
+export const Container = styled.a`
   background: #f4f5f6;
   color: #000;
   display: flex;
   flex-direction: row;
-  width: 343px;
+  width: 100%;
   padding: 24px;
+  text-decoration: none;
 
   justify-content: space-between;
+
+  &:hover {
+    transform: translateX(10px);
+    background: ${shade(0.1, '#f4f5f6')};
+  }
+
+  transition: 0.4s;
+
+  cursor: pointer;
 `;
 
 export const TitleCar = styled.div`

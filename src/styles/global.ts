@@ -8,10 +8,16 @@ export const GlobalStyles = createGlobalStyle`
     outline: 0;
   }
 
-  body {
+  body, #root {
     background: #fff;
     color: #3D3D4D;
     -webkit-font-smoothing: antialiased;
+    background: #f4f5f6;
+    height: calc(100vh - 72px);
+    margin-top: 72px;
+    height: 100%;
+    min-height: calc(100vh - 72px);
+    min-width: 330px;
   }
 
   body, input, button {
@@ -32,4 +38,24 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  min-height: calc(100vh - 72px);
+`;
+
+export const Content = styled.div`
+  justify-content: center;
+  display: flex;
+
+  box-shadow: rgb(220, 220, 220) 0px 0rem 1rem;
+  background: #fff;
+  padding: 42px;
+  max-width: 1370px;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 72px);
+  min-width: 330px;
+`;

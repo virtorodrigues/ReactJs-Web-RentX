@@ -26,6 +26,7 @@ export const Container = styled.div`
   opacity: 1;
   transform: translateY(0px);
   visibility: visible;
+  min-width: 330px;
 `;
 
 export const OptionsHeader = styled.div`

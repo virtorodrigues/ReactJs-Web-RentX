@@ -6,7 +6,7 @@ import { Container, Details, TitleCar, InformationsToLocate } from './styles';
 import lancer from '../../assets/lancer.svg';
 
 const CardCar: React.FC = () => (
-  <Container>
+  <Container href="/card-opened">
     <Details>
       <TitleCar>
         <span>MITSUBISHI</span>

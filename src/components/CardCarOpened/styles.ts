@@ -1,19 +1,34 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #fff;
+  padding: 32px;
   color: #000;
   display: flex;
-  flex-direction: column;
-
-  max-width: 400px;
-  max-width: 400px;
-
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 `;
 
-export const Body = styled.div`
-  padding: 24px 24px 0px 24px;
+export const Details = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 346px;
+  width: 100%;
+`;
+
+export const Carousel = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 250px;
+  }
 `;
 
 export const TitleDetails = styled.div`
@@ -22,6 +37,7 @@ export const TitleDetails = styled.div`
   margin-bottom: 16px;
   justify-content: space-between;
   margin: 24px 0;
+  width: 100%;
 
   span {
     color: #aeaeb3;
@@ -55,6 +71,7 @@ export const SchedulingDate = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 40px 0;
+  width: 100%;
 
   div {
     display: flex;
@@ -76,6 +93,7 @@ export const AllDetailsCar = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 
   div {
     margin-top: 8px;
@@ -106,6 +124,7 @@ export const TotalToPay = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 
   background: #f4f5f6;
 

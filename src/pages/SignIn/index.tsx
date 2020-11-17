@@ -42,7 +42,7 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <Content>
-        <strong> Estamosquase lá.</strong>
+        <strong>Estamos quase lá.</strong>
         <span>Faça seu login para começar uma experiência incrível.</span>
 
         <Form ref={formRef} onSubmit={handleSubmit}>

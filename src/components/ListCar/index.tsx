@@ -8,8 +8,6 @@ const ListCar: React.FC = () => (
     <CardCar />
     <CardCar />
     <CardCar />
-    <CardCar />
-    <CardCar />
   </Container>
 );
 
