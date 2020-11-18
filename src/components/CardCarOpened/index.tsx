@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiCamera } from 'react-icons/fi';
 
 import {
   Container,
@@ -13,7 +12,6 @@ import {
   Details,
 } from './styles';
 
-import lancer from '../../assets/lancer.svg';
 import forca from '../../assets/forca.svg';
 import cambio from '../../assets/cambio.svg';
 import gasolina from '../../assets/gasolina.svg';
@@ -99,23 +97,3 @@ const CardCarOpened: React.FC = () => (
 );
 
 export default CardCarOpened;
-
-/**
- *
- *  <Container>
-    <Details>
-      <TitleCar>
-        <span>MITSUBISHI</span>
-        <strong>Lancer Evo X</strong>
-      </TitleCar>
-      <InformationsToLocate>
-        <div>
-          <span>POR 3 DIAS</span>
-          <strong>R$ 290</strong>
-        </div>
-        <FiCamera size={20} />
-      </InformationsToLocate>
-    </Details>
-    <img src={lancer} alt="" />
-  </Container>
- */

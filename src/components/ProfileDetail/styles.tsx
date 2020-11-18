@@ -11,8 +11,14 @@ export const Container = styled.div`
   max-width: 500px;
   width: 100%;
 
-  img {
+  > img {
     margin-bottom: 24px;
+    margin-top: -90px;
+  }
+
+  > strong {
+    color: #3d3d4d;
+    font-size: 30px;
   }
 `;
 
@@ -25,6 +31,22 @@ export const Scheduleds = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+
+  > span {
+    color: #7a7a80;
+    font-size: 15px;
+  }
+
+  > p {
+    font-size: 15px;
+    color: #47474d;
+  }
+`;
+
+export const Header = styled.div`
+  background: #1b1b1f;
+  height: 200px;
+  width: 100%;
 `;
 
 export const FavoritCar = styled.div`
@@ -41,5 +63,15 @@ export const FavoritCar = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  > span {
+    color: #7a7a80;
+    font-size: 15px;
+  }
+
+  > p {
+    color: #47474d;
+    font-size: 15px;
   }
 `;

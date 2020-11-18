@@ -1,7 +1,6 @@
 import React from 'react';
 import ButtonPrimary from '../../components/ButtonPrimary';
 import ButtonSecondary from '../../components/ButtonSecondary';
-import CardCarOpened from '../../components/CardCarOpened';
 
 import logo from '../../assets/logo.svg';
 import { Container } from './styles';
