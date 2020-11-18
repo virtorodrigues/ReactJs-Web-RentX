@@ -6,11 +6,23 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #1B1B1F;
+  padding: 24px;
+  max-width: 1370px;
+  color: #F4F5F6;
 
-  color: #000;
+  img {
+    margin-bottom: 120px;
+  }
 
   h1 {
-    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
+  span {
+    color: #DEDEE3;
+    margin-top: 24px;
+    font-size: 15px;
   }
 
   > div {

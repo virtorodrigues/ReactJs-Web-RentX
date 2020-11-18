@@ -5,6 +5,9 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-width: 330px;
+
+  padding: 24px;
+  max-width: 1370px;
 `;
 
 export const Content = styled.div`

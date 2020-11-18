@@ -5,6 +5,7 @@ import SignUp from '../pages/SignUp';
 import Home from '../pages/Home';
 import ResultsCar from '../pages/ResultsCar';
 import CardOpened from '../pages/CardDetailsCar';
+import Profile from '../pages/Profile';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -13,6 +14,7 @@ const Routes: React.FC = () => (
     <Route path="/" exact component={Home} />
     <Route path="/list" exact component={ResultsCar} />
     <Route path="/card-opened" exact component={CardOpened} />
+    <Route path="/profile" exact component={Profile} />
   </Switch>
 );
 
