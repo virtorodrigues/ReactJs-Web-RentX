@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ProfileDetail from '../../components/ProfileDetail';
-import ProfileEdit from '../../components/ProfileEdit';
+import ProfileDetail from './ProfileDetail';
+// import ProfileEdit from '../../components/ProfileEdit';
 
 import { Container } from './styles';
 

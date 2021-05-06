@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container, Content } from './styles';
-import ListCar from '../../components/ListCar';
+import ListCar from './ListCar';
 
 const ResultsCar: React.FC = () => {
   return (

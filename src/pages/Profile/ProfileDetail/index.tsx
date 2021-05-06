@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Scheduleds, FavoritCar, Header } from './styles';
 
-import profile from '../../assets/profile.svg';
-import CardCar from '../CardCarClosed';
+import profile from '../../../assets/profile.svg';
+import CardCar from '../../../components/CardCarClosed';
 
 const ProfileDetail: React.FC = () => (
   <>

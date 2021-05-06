@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-import CardCar from '../CardCarClosed';
+import CardCar from '../../../components/CardCarClosed';
 
 const ListCar: React.FC = () => (
   <Container>

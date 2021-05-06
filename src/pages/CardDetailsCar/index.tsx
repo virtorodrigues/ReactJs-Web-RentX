@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import CardCarOpened from '../../components/CardCarOpened';
+import CardCarOpened from './CardCarOpened';
 
 const CardDetailsCar: React.FC = () => {
   return (

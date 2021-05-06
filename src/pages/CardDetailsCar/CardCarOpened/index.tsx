@@ -12,15 +12,15 @@ import {
   Details,
 } from './styles';
 
-import forca from '../../assets/forca.svg';
-import cambio from '../../assets/cambio.svg';
-import gasolina from '../../assets/gasolina.svg';
-import speed from '../../assets/speed.svg';
-import up from '../../assets/up.svg';
-import pessoas from '../../assets/pessoas.svg';
-import seta from '../../assets/seta.svg';
-import lambo from '../../assets/lambo.svg';
-import ButtonPrimary from '../ButtonPrimary';
+import forca from '../../../assets/forca.svg';
+import cambio from '../../../assets/cambio.svg';
+import gasolina from '../../../assets/gasolina.svg';
+import speed from '../../../assets/speed.svg';
+import up from '../../../assets/up.svg';
+import pessoas from '../../../assets/pessoas.svg';
+import seta from '../../../assets/seta.svg';
+import lambo from '../../../assets/lambo.svg';
+import ButtonPrimary from '../../../components/ButtonPrimary';
 
 const CardCarOpened: React.FC = () => (
   <Container>
